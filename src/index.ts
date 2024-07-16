@@ -1,6 +1,6 @@
 import { Command } from 'commander'
 import { version } from '../package.json'
-import create from './command/create'
+import { create } from './command/create'
 // 这里我们用 dawei 当作我的指令名称
 // 命令行中使用 sheyu xxx 即可触发
 const program = new Command('sheyu');
@@ -24,7 +24,7 @@ program
   .argument('[name]', '项目名称')
   .action(async (dirName) => {
     // 添加create方法
-    await create(dirName);
+    create(dirName);
   });
 
 program.parse();
