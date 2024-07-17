@@ -18,7 +18,7 @@ export const templates: Map<string, TemplateInfo> = new Map([
         'Vite-Vue3-Typescript-tempalte',
         {
             name: 'Vite-Vue3-Typescript-tempalte',
-            downloadUrl: 'git@gitee.com:victoriaLsj/admin-pro.git',
+            downloadUrl: 'https://gitee.com/victoriaLsj/admin-pro.git',
             description: 'Vue3技术栈开发模板',
             branch: 'master',
         },
