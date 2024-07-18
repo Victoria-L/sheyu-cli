@@ -22,16 +22,16 @@ export const templates: Map<string, TemplateInfo> = new Map([
             description: 'Vue3技术栈开发模板',
             branch: 'master',
         },
+    ],
+    [
+        'Vite-Vue3-移动端模板',
+        {
+            name: 'Vite-Vue3-Typescript-tempalte',
+            downloadUrl: 'https://gitee.com/victoriaLsj/admin-pro.git',
+            description: 'Vue3技术栈开发模板',
+            branch: 'h5',
+        },
     ]
-    // [
-    //     'Vite-Vue3-移动端模板',
-    //     {
-    //         name: 'Vite-Vue3-Typescript-tempalte',
-    //         downloadUrl: 'git@gitee.com:sohucw/admin-pro.git',
-    //         description: 'Vue3技术栈开发模板',
-    //         branch: 'h5',
-    //     },
-    // ],
 ]);
 export function isOverwrite(fileName: string) {
     console.warn(`${fileName}文件夹存在`);
@@ -64,10 +64,10 @@ export const checkVersion = async (name: string, version: string) => {
     const need = gt(latestVersion, version);
     if (need) {
         console.warn(
-            `检查到dawei最新版本： ${chalk.blackBright(latestVersion)}，当前版本是：${chalk.blackBright(version)}`
+            `检查到sheyu最新版本： ${chalk.blackBright(latestVersion)}，当前版本是：${chalk.blackBright(version)}`
         );
         console.log(
-            `可使用： ${chalk.yellow('npm install dawei-cli@latest')}，或者使用：${chalk.yellow('dawei update')}更新`
+            `可使用： ${chalk.yellow('npm install sheyu-cli@latest')}，或者使用：${chalk.yellow('sheyu update')}更新`
         );
     }
     return need;
